@@ -470,3 +470,48 @@ footer.site-footer .wrap{
 }
 footer.site-footer .foot-links{display:flex; gap:20px;}
 footer.site-footer a:hover{color:var(--primary);}
+
+/* ============ mobile refinements ============ */
+@media (max-width:640px){
+  .wrap{padding:0 20px;}
+
+  nav.main-nav{
+    padding:18px 20px;
+    gap:10px 16px;
+  }
+  .nav-links{gap:2px;}
+  .nav-links a{padding:6px 10px; font-size:13px;}
+  .nav-contact{gap:14px;}
+
+  .hero{padding:32px 0 40px;}
+  .hero-eyebrow{font-size:11.5px; padding:5px 12px;}
+
+  .role-row{
+    min-height:auto;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  .hero-desc{margin-bottom:28px;}
+
+  .section-head{margin-bottom:26px;}
+  main.page-body{padding:36px 0 64px;}
+
+  .skill-card{
+    flex-wrap:wrap;
+    row-gap:12px;
+  }
+  .skill-info{
+    min-width:0;
+    flex-basis:calc(100% - 72px);
+  }
+  .skill-badge{margin-left:auto;}
+
+  .project-card{padding:20px;}
+
+  footer.site-footer .wrap{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+  footer.site-footer .foot-links{flex-wrap:wrap; gap:14px 18px;}
+}
