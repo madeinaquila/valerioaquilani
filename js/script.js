@@ -9,7 +9,7 @@
     'Web Developer',
     'Master in Data Science & AI',
     'Analytics Enthusiast',
-    'Atleta Nazionale Sordi 🏐'
+    'Atleta Nazionale Sordi'
   ];
 
   let roleIndex = 0;
@@ -55,8 +55,8 @@
 // user/domain parts below with the real address.
 // ==========================================
 (function () {
-  const emailUser = 'valerio.aquilani'; // TODO: replace with real handle
-  const emailDomain = 'example.com';    // TODO: replace with real domain
+  const emailUser = 'v.aquilani10';
+  const emailDomain = 'gmail.com';
 
   document.querySelectorAll('[data-email-reveal]').forEach((el) => {
     el.addEventListener('click', function (e) {

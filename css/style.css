@@ -234,8 +234,10 @@ nav.cli-nav{
 }
 .signature-strip .tag{
   flex-shrink:0;
-  font-size:20px;
-  line-height:1;
+  font-size:15px;
+  font-weight:700;
+  color:var(--teal);
+  line-height:1.6;
 }
 .signature-strip p{
   margin:0;
