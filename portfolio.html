@@ -5,96 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio — Valerio Aquilani</title>
 <meta name="description" content="Progetti di Valerio Aquilani: Excel, Excel Advanced, SQL, Python.">
-<meta name="theme-color" content="#0F0F23">
+<meta name="theme-color" content="#FAF9F6">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="wrap">
+<header class="site-header">
+  <nav class="main-nav">
+    <a href="index.html" class="nav-brand">Valerio Aquilani<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+    </div>
+    <div class="nav-contact">
+      <a href="#" data-email-reveal>Email</a>
+      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+</header>
 
-  <div class="terminal-shell">
-    <div class="term-bar">
-      <span class="term-dot red"></span>
-      <span class="term-dot yellow"></span>
-      <span class="term-dot green"></span>
-      <span class="term-path">valerio@portfolio: ~/portfolio</span>
+<main class="page-body">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Lavori</span>
+      <h2>Portfolio</h2>
     </div>
 
-    <nav class="cli-nav">
-      <a href="index.html">home</a>
-      <a href="about.html">about</a>
-      <a href="skills.html">skills</a>
-      <a href="portfolio.html" class="active">portfolio</a>
-      <span class="sep"></span>
-      <a href="#" class="icon-link" data-email-reveal>email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" class="icon-link" target="_blank" rel="noopener">linkedin</a>
-    </nav>
+    <div class="project-grid">
 
-    <div class="terminal-body">
-      <div class="prompt-line">
-        <span class="p-user">valerio@portfolio</span><span class="p-sep">:~/portfolio$</span>
-        <span class="p-cmd">ls -la ./progetti</span>
+      <div class="project-card">
+        <div class="p-top">
+          <span class="project-tool">EXCEL</span>
+          <span class="status-pill live">disponibile</span>
+        </div>
+        <h3>Owly — Analisi dati piattaforma education</h3>
+        <p>Analisi in Excel a supporto di Owly, piattaforma SaaS education per le scuole primarie: organizzazione dei dati e reportistica a supporto della didattica.</p>
+        <a class="project-link" href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
       </div>
 
-      <div class="section-head" style="margin-top:22px;">
-        <span class="eyebrow">// lavori</span>
-        <h2>Portfolio</h2>
+      <div class="project-card">
+        <div class="p-top">
+          <span class="project-tool">EXCEL ADVANCED</span>
+          <span class="status-pill live">disponibile</span>
+        </div>
+        <h3>Dataset spreco alimentare</h3>
+        <p>Esplorazione di un dataset con filtri, formule avanzate e tabelle pivot, con grafici a supporto di un'azienda impegnata contro lo spreco alimentare.</p>
+        <a class="project-link" href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
       </div>
 
-      <div class="project-grid">
-
-        <div class="project-card">
-          <div class="p-top">
-            <span class="project-tool">EXCEL</span>
-            <span class="status-pill live">disponibile</span>
-          </div>
-          <h3>Owly — Analisi dati piattaforma education</h3>
-          <p>Analisi in Excel a supporto di Owly, piattaforma SaaS education per le scuole primarie: organizzazione dei dati e reportistica a supporto della didattica.</p>
-          <a class="project-link" href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
+      <div class="project-card">
+        <div class="p-top">
+          <span class="project-tool">SQL</span>
+          <span class="status-pill soon">coming soon</span>
         </div>
-
-        <div class="project-card">
-          <div class="p-top">
-            <span class="project-tool">EXCEL ADVANCED</span>
-            <span class="status-pill live">disponibile</span>
-          </div>
-          <h3>Dataset spreco alimentare</h3>
-          <p>Esplorazione di un dataset con filtri, formule avanzate e tabelle pivot, con grafici a supporto di un'azienda impegnata contro lo spreco alimentare.</p>
-          <a class="project-link" href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
-        </div>
-
-        <div class="project-card">
-          <div class="p-top">
-            <span class="project-tool">SQL</span>
-            <span class="status-pill soon">coming soon</span>
-          </div>
-          <h3>Query ed esplorazione dataset</h3>
-          <p>Serie di query SELECT commentate per estrarre insight da dataset relazionali, con unione di più tabelle tramite JOIN.</p>
-          <span class="project-link disabled">In arrivo</span>
-        </div>
-
-        <div class="project-card">
-          <div class="p-top">
-            <span class="project-tool">PYTHON</span>
-            <span class="status-pill soon">coming soon</span>
-          </div>
-          <h3>LookBook — Sistema di gestione elementi</h3>
-          <p>Sistema in Python per LookBook, app di second-hand fashion: registrazione, ricerca e analisi di una collezione di elementi, sviluppato su Jupyter Notebook.</p>
-          <span class="project-link disabled">In arrivo</span>
-        </div>
-
+        <h3>Query ed esplorazione dataset</h3>
+        <p>Serie di query SELECT commentate per estrarre insight da dataset relazionali, con unione di più tabelle tramite JOIN.</p>
+        <span class="project-link disabled">In arrivo</span>
       </div>
+
+      <div class="project-card">
+        <div class="p-top">
+          <span class="project-tool">PYTHON</span>
+          <span class="status-pill soon">coming soon</span>
+        </div>
+        <h3>LookBook — Sistema di gestione elementi</h3>
+        <p>Sistema in Python per LookBook, app di second-hand fashion: registrazione, ricerca e analisi di una collezione di elementi, sviluppato su Jupyter Notebook.</p>
+        <span class="project-link disabled">In arrivo</span>
+      </div>
+
     </div>
   </div>
-
-</div>
+</main>
 
 <footer class="site-footer">
-  <span>© 2026 Valerio Aquilani</span>
-  <span class="foot-links">
-    <a href="#" data-email-reveal>Email</a>
-    <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-  </span>
+  <div class="wrap">
+    <span>© 2026 Valerio Aquilani</span>
+    <span class="foot-links">
+      <a href="#" data-email-reveal>Email</a>
+      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
 </footer>
 
 <script src="js/script.js"></script>
