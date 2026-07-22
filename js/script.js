@@ -1,4 +1,35 @@
 // ==========================================
+// Signature line draw-in (hero graphic)
+// Uses getTotalLength() instead of the pathLength
+// SVG attribute, since pathLength has historically
+// unreliable support in Safari.
+// ==========================================
+(function () {
+  const path = document.querySelector('.trend-path');
+  if (!path) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const length = path.getTotalLength();
+  path.style.strokeDasharray = length;
+
+  if (prefersReducedMotion) {
+    path.style.strokeDashoffset = '0';
+    return;
+  }
+
+  path.style.strokeDashoffset = length;
+  // Force a reflow so the browser registers the starting state
+  // before the transition below is applied.
+  path.getBoundingClientRect();
+
+  path.style.transition = 'stroke-dashoffset 1.7s cubic-bezier(.25,.8,.35,1) .2s';
+  requestAnimationFrame(() => {
+    path.style.strokeDashoffset = '0';
+  });
+})();
+
+// ==========================================
 // Typing effect for hero roles
 // ==========================================
 (function () {
