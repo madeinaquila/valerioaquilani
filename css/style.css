@@ -343,6 +343,29 @@ main.page-body{padding:56px 0 96px;}
 
 .cv-btn{margin-top:6px;}
 
+.looking-for-box{
+  margin:8px 0 22px;
+  padding:18px 20px;
+  border-radius:var(--radius);
+  border:1.5px solid rgba(30,64,224,.25);
+  background:var(--primary-dim);
+}
+.looking-for-label{
+  display:block;
+  font-family:var(--mono);
+  font-size:11.5px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:var(--primary);
+  margin-bottom:6px;
+}
+.looking-for-box p{
+  margin:0;
+  font-size:15px;
+  color:var(--ink);
+}
+.looking-for-box p strong{color:var(--primary); font-weight:700;}
+
 /* ============ skills page ============ */
 .skills-list{display:flex; flex-direction:column; gap:14px;}
 .skill-card{
