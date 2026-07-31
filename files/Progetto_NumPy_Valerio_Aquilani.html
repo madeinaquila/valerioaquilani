@@ -13095,16 +13095,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nella cartella <em>files</em> trovi 8 file:</p>
-<ul>
-<li>2 file di testo</li>
-<li>2 file audio</li>
-<li>4 immagini,</li>
-</ul>
-<p>con varie estensioni.</p>
-<p><strong>Step 1</strong></p>
-<p>Inizia creando, in un notebook, uno script Python che iteri in ordine alfabetico sui file della cartella files e, a seconda del tipo (audio, documento, immagine), li sposti nella relativa sottocartella (qui sotto trovi un esempio). Se la sottocartella non esiste, il tuo script dovrà crearla automaticamente.</p>
-<p>Durante il ciclo, lo script deve stampare le informazioni dei file: nome, tipo e dimensione in byte. Questo è l'output desiderato:</p>
+<h1 id="File-Organizer">File Organizer<a class="anchor-link" href="#File-Organizer">¶</a></h1><h3 id="Progetto-Python-%7C-Organizzazione-automatica-di-file-ed-analisi-immagini-con-NumPy">Progetto Python | Organizzazione automatica di file ed analisi immagini con NumPy<a class="anchor-link" href="#Progetto-Python-%7C-Organizzazione-automatica-di-file-ed-analisi-immagini-con-NumPy">¶</a></h3><p><strong>Autore:</strong> Valerio Aquilani
+<strong>Corso:</strong> Python — start2impact University</p>
+<p><strong>Contesto:</strong> partendo da una cartella <code>files</code> contenente 8 file eterogenei (2 di testo, 2 audio, 4 immagini), ho sviluppato uno script che organizza automaticamente il contenuto in sottocartelle per tipo, tiene traccia di ogni spostamento in un log CSV, e analizza le immagini con NumPy per ricavarne i valori medi dei canali colore.</p>
+<h2 id="Step-1-%E2%80%94-Organizzazione-automatica">Step 1 — Organizzazione automatica<a class="anchor-link" href="#Step-1-%E2%80%94-Organizzazione-automatica">¶</a></h2><p>Ho scritto uno script Python che itera in ordine alfabetico sui file della cartella <code>files</code> e, in base al tipo (audio, documento, immagine), li sposta nella sottocartella corrispondente, creandola automaticamente se non esiste. Durante il ciclo, lo script stampa nome, tipo e dimensione in byte di ogni file spostato:</p>
 </div>
 </div>
 </div>
@@ -13204,46 +13198,37 @@ trump type:image size:10195B
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Oltre a stamparne le informazioni via via che li sposti, tieni traccia dei file creando un documento <em>recap.csv</em> con le stesse informazioni. Trovi un esempio in questa cartella.</p>
-<p>La struttura finale della cartella files dovrà essere:</p>
-<pre><code>    - files            
-        - audio
-            - song1.mp3
-            - song2.mp3
-        - docs
-            - ciao.txt
-            - pippo.odt
-        - images
-            - bw.png
-            - daffodil.jpg
-            - eclipse.png
-            - trump.jpeg    
-        - recap.csv</code></pre>
-<p>Commenta il codice con i passaggi che fai. Questo vale anche per i prossimi Step.</p>
-<p><strong>Attenzione</strong>: lo script, ogni volta che viene lanciato per spostare nuovi file, deve <em>aggiornare</em> (e non sovrascrivere) le sottocartelle e il file di recap. Per controllare che tutto funzioni correttamente, puoi aggiungere altri file alla cartella files e fare un test; oppure, puoi dividere gli 8 file originali in due gruppi e lasciarne uno per il test.</p>
-<h2 id="Consiglio:-puoi-usare-le-librerie-os,-shutil-e-csv."><strong>Consiglio</strong>: puoi usare le librerie <em>os</em>, <em>shutil</em> e <em>csv</em>.<a class="anchor-link" href="#Consiglio:-puoi-usare-le-librerie-os,-shutil-e-csv.">¶</a></h2>
+<p>Oltre alla stampa a video, ogni spostamento viene registrato in un file <code>recap.csv</code>, con le stesse informazioni (nome, tipo, dimensione). Il file viene sempre aggiornato in append, mai sovrascritto: se lo script viene rilanciato più volte, il recap accumula lo storico di tutti i file spostati senza perdere le righe precedenti.</p>
+<p>La struttura finale della cartella <code>files</code> è:</p>
+<pre><code>files
+├── audio
+│   ├── song1.mp3
+│   └── song2.mp3
+├── docs
+│   ├── ciao.txt
+│   └── pippo.odt
+├── images
+│   ├── bw.png
+│   ├── daffodil.jpg
+│   ├── eclipse.png
+│   └── trump.jpeg
+└── recap.csv
+</code></pre>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Step 2</strong></p>
-<p>Inserisci lo script che hai creato in un piccolo eseguibile (chiamalo <em>addfile.py</em> e posizionalo in questa cartella, a fianco del notebook) dotato di <em>interfaccia a linea di comando</em> (CLI).</p>
-<p>Lo scopo dell'eseguibile è spostare un <em>singolo</em> file (che si trova nella cartella files) nella sottocartella di competenza, aggiornando il recap.</p>
-<p>L'interfaccia dell'eseguibile ha come unico argomento (obbligatorio) il nome del file da spostare (comprensivo di formato, es: 'trump.jpeg'). Nel caso in cui il file passato come argomento non esista, l'interfaccia deve comunicarlo all'utente.</p>
-<p><strong>Consiglio</strong>: oltre alle precedenti, puoi usare le librerie <em>sys</em> e <em>argparse</em>.</p>
-<hr/>
+<h2 id="Step-2-%E2%80%94-Interfaccia-a-linea-di-comando-(CLI)">Step 2 — Interfaccia a linea di comando (CLI)<a class="anchor-link" href="#Step-2-%E2%80%94-Interfaccia-a-linea-di-comando-(CLI)">¶</a></h2><p>Ho estratto la logica dello Step 1 in un eseguibile standalone, <code>addfile.py</code> (visibile in fondo a questa pagina), dotato di interfaccia a linea di comando tramite <code>argparse</code>. Lo script sposta un singolo file passato come argomento nella sua sottocartella di competenza, aggiornando il recap. Se il file indicato non esiste, lo comunica all'utente invece di generare un errore.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Step 3</strong></p>
-<p>Una immagine in scala di grigio ha un solo livello di colore, una RGB ne ha 3, una RGBA 4 (l'ultimo è detto canale <em>alpha</em>).</p>
-<p>Il modulo <em>Image</em> della libreria <em>PIL</em> permette di caricare un'immagine, che può essere trasformata in un array NumPy attraverso la funzione <em>np.array</em>. A partire da tale array, è possibile capire se l'immagine caricata è in scala di grigio, RGB o RGBA.</p>
-<p>Aggiungi al notebook dello Step 1 uno script che iteri sulla sottocartella <em>images</em> e costruisca una tabella riassuntiva come questa (prodotta con la libreria <em>tabulate</em>):</p>
+<h2 id="Step-3-%E2%80%94-Analisi-dei-canali-colore-con-NumPy">Step 3 — Analisi dei canali colore con NumPy<a class="anchor-link" href="#Step-3-%E2%80%94-Analisi-dei-canali-colore-con-NumPy">¶</a></h2><p>Un'immagine in scala di grigio ha un solo livello di colore, una RGB ne ha 3, una RGBA 4 (il quarto è il canale <em>alpha</em>, la trasparenza). Ho usato il modulo <code>Image</code> di PIL per caricare ogni immagine della sottocartella <code>images</code>, convertendola in un array NumPy con <code>np.array</code>: dalla forma dell'array (<code>shape</code>) si ricava se l'immagine è in scala di grigio, RGB o RGBA, e con <code>.mean()</code> calcolo il valore medio di ciascun canale.</p>
+<p>Il risultato è una tabella riassuntiva (costruita con la libreria <code>tabulate</code>) con dimensioni e valori medi dei canali per ogni immagine:</p>
 </div>
 </div>
 </div>
@@ -13324,22 +13309,9 @@ trump type:image size:10195B
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Oltre al nome del file, la tabella riporta:</p>
 <ul>
-<li>altezza dell'immagine, in pixel</li>
-<li>larghezza dell'immagine, in pixel</li>
-<li>se l'immagine è in scala di grigio, la colonna <em>grayscale</em> indica la media dei valori dell'unico livello di colore</li>
-<li>se l'immagine è a colori, le altre colonne indicano la media dei valori di ogni livello di colore.</li>
-</ul>
-<hr/>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Dovrai consegnare</strong>:</p>
-<ul>
-<li>un notebook con gli Step 1 e 3; per semplicità puoi chiamarlo come questo</li>
-<li>addfile.py con quanto richiesto dallo Step 2.</li>
+<li>altezza e larghezza dell'immagine, in pixel</li>
+<li>per le immagini in scala di grigio, la colonna <em>grayscale</em> con la media dell'unico livello di colore</li>
+<li>per le immagini a colori, la media di ciascun canale (R, G, B, e ALPHA se presente)</li>
 </ul>
 </div>
 </div>
@@ -13351,8 +13323,8 @@ trump type:image size:10195B
 <div class="cell border-box-sizing text_cell rendered" style="max-width:900px;margin:0 auto;padding:0 20px;">
   <div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <h2 id="step-2-addfile.py-cli">Step 2 — addfile.py (interfaccia a linea di comando)</h2>
-      <p>Script eseguibile standalone che sposta un singolo file nella sottocartella di competenza, aggiornando <code>recap.csv</code>. Usa <code>argparse</code> per l'interfaccia CLI.</p>
+      <h2 id="addfile-py">addfile.py — codice completo</h2>
+      <p>Codice completo dell'eseguibile descritto nello Step 2, con interfaccia CLI tramite <code>argparse</code>.</p>
     </div>
   </div>
 </div>
