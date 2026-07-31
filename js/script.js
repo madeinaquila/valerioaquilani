@@ -39,8 +39,7 @@
   const roles = [
     'Web Developer',
     'Master in Data Science & AI',
-    'Analytics Enthusiast',
-    'Atleta Nazionale Sordi'
+    'Analytics Enthusiast'
   ];
 
   let roleIndex = 0;
