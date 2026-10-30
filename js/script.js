@@ -31,7 +31,7 @@
   const answer = quiz.querySelector('.quiz-answer');
   const buttons = quiz.querySelectorAll('button[data-answer]');
   const texts = {
-    ui: 'Guarda la pagina <a href="about.html">Percorso</a>: 13 anni di interfacce su Figma, con attenzione all’accessibilità.',
+    ui: 'Guarda <a href="portfolio.html#restart">ReStart</a>, un’app per il recupero fisico dopo il trapianto, e il <a href="about.html">mio percorso</a> nel design.',
     dati: 'Guarda il progetto SQL sui <a href="portfolio.html#sostenibile">195 Paesi</a> e quello sullo <a href="portfolio.html#spreco">spreco alimentare</a>.',
     tutte: 'È proprio quello che faccio: analizzo i dati e progetto il modo più chiaro per mostrarli. <a href="portfolio.html">Vedi tutti i progetti</a>.'
   };
