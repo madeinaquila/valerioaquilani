@@ -246,6 +246,9 @@ a.spec:hover{background:var(--bianco)}
 .block .display{font-size:44px;line-height:.9}
 .block .spec-list dt{color:inherit;opacity:1;font-weight:600}
 .block:hover{transform:translateY(-3px)}
+.block-feature{grid-column:span 2;grid-row:span 2;padding:0;overflow:hidden;gap:0}
+.block-feature img{width:100%;height:100%;min-height:300px;max-height:420px;object-fit:cover;object-position:left center}
+.block-feature .block-text{padding:24px;display:flex;flex-direction:column;gap:24px}
 .bg-pomodoro{background:var(--pomodoro);color:var(--ink)}
 .bg-verde{background:var(--verde);color:var(--chiaro)}
 .bg-cielo{background:var(--cielo);color:var(--ink)}
@@ -279,6 +282,8 @@ a.spec:hover{background:var(--bianco)}
 }
 .case-body h3{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;line-height:1;margin-bottom:10px;color:var(--verde)}
 .case-body p{font-size:17px;line-height:1.6;max-width:34em}
+.case-img{grid-column:1 / -1;margin:0}
+.case-img img{width:100%;height:auto;border-radius:10px}
 .case-link{grid-column:1 / -1;border-top:1px solid var(--linea);padding-top:20px;display:flex;gap:24px;flex-wrap:wrap}
 
 /* ---------- competenze ---------- */
@@ -370,6 +375,8 @@ a.spec:hover{background:var(--bianco)}
   .top nav{display:none}
   .menu-btn{display:inline-flex;align-items:center}
   .blocks{grid-template-columns:1fr}
+  .block-feature{grid-column:auto;grid-row:auto}
+  .block-feature img{min-height:0;max-height:none;height:auto}
   .case-top{grid-template-columns:1fr;align-items:start}
   .case-body{grid-template-columns:1fr}
   .skill-grid{grid-template-columns:1fr}
