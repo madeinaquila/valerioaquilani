@@ -311,14 +311,11 @@ a.spec:hover{background:var(--bianco)}
 .route{padding:40px var(--gutter) 100px}
 .route ol{
   list-style:none;margin:0;padding:0;
-  display:grid;grid-template-columns:repeat(5, minmax(0,1fr));
+  display:grid;grid-template-columns:repeat(4, minmax(0,1fr));
   position:relative;
 }
 .route ol::before{
-  content:"";position:absolute;left:10%;right:30%;top:17px;height:10px;background:var(--verde);border-radius:5px;
-}
-.route ol::after{
-  content:"";position:absolute;left:70%;right:10%;top:19px;border-top:6px dashed var(--verde);
+  content:"";position:absolute;left:12.5%;right:12.5%;top:17px;height:10px;background:var(--verde);border-radius:5px;
 }
 .route li > div{display:flex;flex-direction:column;gap:6px}
 .route li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;padding:0 10px}
@@ -327,9 +324,8 @@ a.spec:hover{background:var(--bianco)}
   width:44px;height:44px;border-radius:50%;background:var(--bianco);border:9px solid var(--verde);position:relative;z-index:1;
 }
 .route li.now .stop{background:var(--senape)}
-.route li.next .stop{border-style:dashed;border-width:5px}
 .route .tag{
-  position:absolute;top:-38px;background:var(--pomodoro);color:var(--ink);font-weight:700;font-size:14px;padding:3px 10px;border-radius:999px;
+  position:absolute;top:-38px;left:50%;transform:translateX(-50%);background:var(--pomodoro);color:var(--ink);font-weight:700;font-size:14px;padding:3px 10px;border-radius:999px;
 }
 .route h3{font-family:var(--display);font-weight:900;font-size:34px;line-height:.9;text-transform:uppercase;color:var(--verde)}
 .route p{font-size:15px;line-height:1.45;color:var(--muted)}
@@ -378,11 +374,10 @@ a.spec:hover{background:var(--bianco)}
   .case-body{grid-template-columns:1fr}
   .skill-grid{grid-template-columns:1fr}
   .route ol{grid-template-columns:1fr;gap:28px}
-  .route ol::before{left:21px;right:auto;top:20px;bottom:120px;width:10px;height:auto}
-  .route ol::after{left:24px;right:auto;top:auto;bottom:30px;height:90px;border-top:0;border-left:6px dashed var(--verde)}
+  .route ol::before{left:17px;right:auto;top:20px;bottom:60px;width:10px;height:auto}
   .route li{flex-direction:row;align-items:flex-start;text-align:left;gap:20px;padding:0}
   .route li > div{display:flex;flex-direction:column;gap:6px;padding-top:4px}
-  .route .tag{position:static;align-self:flex-start;margin-bottom:4px}
+  .route .tag{position:static;transform:none;align-self:flex-start;margin-bottom:4px}
 }
 @media (max-width: 640px){
   body{font-size:17px}
