@@ -319,17 +319,17 @@ a.spec:hover{background:var(--bianco)}
   position:relative;
 }
 .route ol::before{
-  content:"";position:absolute;left:12.5%;right:12.5%;top:17px;height:10px;background:var(--verde);border-radius:5px;
+  content:"";position:absolute;left:17px;right:calc(25% - 27px);top:17px;height:10px;background:var(--verde);border-radius:5px;
 }
 .route li > div{display:flex;flex-direction:column;gap:6px}
-.route li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;padding:0 10px}
+.route li{position:relative;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:16px;padding:0 24px 0 0}
 .stop{
   flex:none;
   width:44px;height:44px;border-radius:50%;background:var(--bianco);border:9px solid var(--verde);position:relative;z-index:1;
 }
 .route li.now .stop{background:var(--senape)}
 .route .tag{
-  position:absolute;top:-38px;left:50%;transform:translateX(-50%);background:var(--pomodoro);color:var(--ink);font-weight:700;font-size:14px;padding:3px 10px;border-radius:999px;
+  position:absolute;top:-38px;left:0;background:var(--pomodoro);color:var(--ink);font-weight:700;font-size:14px;padding:3px 10px;border-radius:999px;
 }
 .route h3{font-family:var(--display);font-weight:900;font-size:34px;line-height:.9;text-transform:uppercase;color:var(--verde)}
 .route p{font-size:15px;line-height:1.45;color:var(--muted)}
