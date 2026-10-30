@@ -1,100 +1,61 @@
-// ==========================================
-// Signature line draw-in (hero graphic)
-// Uses getTotalLength() instead of the pathLength
-// SVG attribute, since pathLength has historically
-// unreliable support in Safari.
-// ==========================================
+// Menu a tutta pagina su telefono
 (function () {
-  const path = document.querySelector('.trend-path');
-  if (!path) return;
+  const open = document.querySelector('.menu-btn');
+  const panel = document.getElementById('menu');
+  if (!open || !panel) return;
+  const close = panel.querySelector('.menu-close');
 
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  const length = path.getTotalLength();
-  path.style.strokeDasharray = length;
-
-  if (prefersReducedMotion) {
-    path.style.strokeDashoffset = '0';
-    return;
+  function setOpen(isOpen) {
+    panel.classList.toggle('open', isOpen);
+    open.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    (isOpen ? close : open).focus();
   }
 
-  path.style.strokeDashoffset = length;
-  // Force a reflow so the browser registers the starting state
-  // before the transition below is applied.
-  path.getBoundingClientRect();
-
-  path.style.transition = 'stroke-dashoffset 1.7s cubic-bezier(.25,.8,.35,1) .2s';
-  requestAnimationFrame(() => {
-    path.style.strokeDashoffset = '0';
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
+    panel.classList.remove('open');
+    open.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }));
+  panel.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setOpen(false);
   });
 })();
 
-// ==========================================
-// Typing effect for hero roles
-// ==========================================
+// Domanda in homepage: "Cosa stai cercando?"
 (function () {
-  const target = document.getElementById('typing-target');
-  if (!target) return;
+  const quiz = document.querySelector('[data-quiz]');
+  if (!quiz) return;
+  const answer = quiz.querySelector('.quiz-answer');
+  const buttons = quiz.querySelectorAll('button[data-answer]');
+  const texts = {
+    ui: 'Parti dalla pagina <a href="about.html">Percorso</a>: 13 anni di interfacce su Figma, con attenzione all’accessibilità.',
+    dati: 'Guarda il progetto SQL sui <a href="portfolio.html#sostenibile">195 Paesi</a> e quello sullo <a href="portfolio.html#spreco">spreco alimentare</a>.',
+    tutte: 'È proprio quello che faccio: progetto l’interfaccia e capisco i dati che la riempiono. <a href="portfolio.html">Vedi tutti i progetti</a>.'
+  };
 
-  const roles = [
-    'Web Developer',
-    'Master in Data Science & AI',
-    'Analytics Enthusiast'
-  ];
-
-  let roleIndex = 0;
-  let charIndex = 0;
-  let deleting = false;
-  const typeSpeed = 55;
-  const deleteSpeed = 30;
-  const pauseAfterType = 1400;
-  const pauseAfterDelete = 400;
-
-  function tick() {
-    const word = roles[roleIndex];
-
-    if (!deleting) {
-      charIndex++;
-      target.textContent = word.slice(0, charIndex);
-      if (charIndex === word.length) {
-        deleting = true;
-        setTimeout(tick, pauseAfterType);
-        return;
-      }
-      setTimeout(tick, typeSpeed);
-    } else {
-      charIndex--;
-      target.textContent = word.slice(0, charIndex);
-      if (charIndex === 0) {
-        deleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        setTimeout(tick, pauseAfterDelete);
-        return;
-      }
-      setTimeout(tick, deleteSpeed);
-    }
-  }
-
-  tick();
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      answer.innerHTML = texts[btn.dataset.answer];
+    });
+  });
 })();
 
-// ==========================================
-// Obfuscated email reveal
-// Keeps the address out of the raw HTML so basic
-// scraper bots can't harvest it. Replace the
-// user/domain parts below with the real address.
-// ==========================================
+// Email mostrata solo al clic, così i bot che leggono l'HTML non la trovano
 (function () {
-  const emailUser = 'v.aquilani10';
-  const emailDomain = 'gmail.com';
+  const user = 'v.aquilani10';
+  const domain = 'gmail.com';
 
   document.querySelectorAll('[data-email-reveal]').forEach((el) => {
     el.addEventListener('click', function (e) {
       e.preventDefault();
-      const address = emailUser + '@' + emailDomain;
-      window.location.href = 'mailto:' + address;
-      el.textContent = address;
+      const address = user + '@' + domain;
       el.href = 'mailto:' + address;
+      if (el.dataset.emailReveal !== 'keep') el.textContent = address;
+      window.location.href = 'mailto:' + address;
     });
   });
 })();

@@ -2,105 +2,148 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Valerio Aquilani</title>
-<meta name="description" content="Progetti di Valerio Aquilani: Excel, Excel Advanced, SQL, Python.">
-<meta name="theme-color" content="#FAF9F6">
-<link rel="stylesheet" href="css/style.css?v=5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progetti, Valerio Aquilani</title>
+<meta name="description" content="Casi studio di analisi dati e sviluppo: SQL, Python, NumPy ed Excel, raccontati con problema, dati e risultato.">
+<meta name="theme-color" content="#1E3A2F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E3A2F'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E8B931'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Progetti, Valerio Aquilani">
+<meta property="og:description" content="Casi studio di analisi dati e sviluppo: SQL, Python, NumPy ed Excel, raccontati con problema, dati e risultato.">
+<meta property="og:image" content="https://madeinaquila.github.io/valerioaquilani/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/smooch-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 
-<header class="site-header">
-  <nav class="main-nav">
-    <a href="index.html" class="nav-brand">Valerio Aquilani<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="index.html">/</a>
-      <a href="about.html">/about</a>
-      <a href="skills.html">/skills</a>
-      <a href="portfolio.html" class="active">/portfolio</a>
+<div class="shell">
+<div class="page">
+
+  <header class="band on-dark" style="background:var(--verde);color:var(--chiaro)">
+    <div class="shape-circle" style="background:var(--senape)" aria-hidden="true"></div>
+    <div class="shape-square" style="background:var(--pomodoro)" aria-hidden="true"></div>
+    <div class="top">
+      <nav aria-label="Principale">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
+          <li><a href="skills.html">Competenze</a></li>
+          <li><a href="about.html">Percorso</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     </div>
-    <div class="nav-contact">
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </nav>
-</header>
+    <h1 class="display">Progetti</h1>
+    <p class="lede">Cinque lavori del Master in Data Science, Analytics e Agenti AI. Per ognuno trovi il problema di partenza, i dati usati e cosa ne è uscito.</p>
+  </header>
 
-<main class="page-body">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Lavori</span>
-      <h2>Portfolio</h2>
-    </div>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <div class="p-top">
-          <span class="project-tool">EXCEL</span>
-          <span class="status-pill live">disponibile</span>
-        </div>
-        <h3>Owly — Analisi dati piattaforma education</h3>
-        <p>Analisi in Excel a supporto di Owly, piattaforma SaaS education per le scuole primarie: organizzazione dei dati e reportistica a supporto della didattica.</p>
-        <a class="project-link" href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
+  <main id="contenuto">
+  <div class="cases">
+    <article class="case" id="sostenibile" aria-labelledby="sostenibile-t">
+      <div class="case-top bg-verde">
+        <h2 class="display" id="sostenibile-t">Sviluppo sostenibile in 195 Paesi</h2>
+        <dl class="spec-list"><dt>Tipo</dt><dd>Analisi dati</dd><dt>Strumento</dt><dd>SQL, PostgreSQL</dd><dt>Periodo</dt><dd>Dal 2000 al 2020</dd></dl>
       </div>
-
-      <div class="project-card">
-        <div class="p-top">
-          <span class="project-tool">EXCEL ADVANCED</span>
-          <span class="status-pill live">disponibile</span>
-        </div>
-        <h3>Dataset spreco alimentare</h3>
-        <p>Esplorazione di un dataset con filtri, formule avanzate e tabelle pivot, con grafici a supporto di un'azienda impegnata contro lo spreco alimentare.</p>
-        <a class="project-link" href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&ouid=101027872017826606681&rtpof=true&sd=true" target="_blank" rel="noopener">Apri il foglio →</a>
+      <div class="case-body">
+        <div><h3>Problema</h3><p>Capire come economia, salute, istruzione ed energia si muovono insieme nei diversi Paesi del mondo, e dove i numeri raccontano storie diverse.</p></div>
+        <div><h3>Dati</h3><p>Due dataset pubblici di Kaggle: indicatori 2023 per 195 Paesi e una serie storica sull’energia sostenibile per 176 Paesi. Ho tolto simboli e separatori, poi ho creato una tabella per far combaciare i nomi diversi dello stesso Paese, come Czech Republic e Czechia. 25 Paesi mancano nel secondo dataset e restano fuori dalle unioni.</p></div>
+        <div><h3>Risultato</h3><p>Aspettativa di vita e istruzione universitaria crescono con il PIL, e dividendo i Paesi in quartili di reddito la crescita è quasi costante. Le emissioni pro capite spesso ribaltano la classifica di quelle totali. Le rinnovabili crescono ovunque, ma a velocità diverse anche tra Italia, Germania, Francia e Spagna.</p></div>
+        <div class="case-link"><a class="link-forte" href="files/Progetto_SQL_Valerio_Aquilani.pdf" target="_blank" rel="noopener">Apri la presentazione (PDF)</a></div>
       </div>
+    </article>
 
-      <div class="project-card">
-        <div class="p-top">
-          <span class="project-tool">SQL</span>
-          <span class="status-pill live">disponibile</span>
-        </div>
-        <h3>Sviluppo Sostenibile tra Paesi nel Mondo</h3>
-        <p>Analisi comparativa su economia, popolazione, sanità, istruzione ed energia in 195 Paesi: creazione tabelle in PostgreSQL, JOIN tra dataset con normalizzazione dei nomi, 5 sezioni di query commentate su correlazioni, quartili ed evoluzione temporale 2000-2020.</p>
-        <a class="project-link" href="files/Progetto_SQL_Valerio_Aquilani.pdf" target="_blank" rel="noopener">Vedi la presentazione →</a>
+    <article class="case" id="lookbook" aria-labelledby="lookbook-t">
+      <div class="case-top bg-cielo">
+        <h2 class="display" id="lookbook-t">LookBook</h2>
+        <dl class="spec-list"><dt>Tipo</dt><dd>Gestione di un catalogo</dd><dt>Strumento</dt><dd>Python, Jupyter</dd><dt>Settore</dt><dd>Abbigliamento usato</dd></dl>
       </div>
-
-      <div class="project-card">
-        <div class="p-top">
-          <span class="project-tool">PYTHON</span>
-          <span class="status-pill live">disponibile</span>
-        </div>
-        <h3>LookBook — Sistema di gestione elementi</h3>
-        <p>Sistema in Python per LookBook, app di second-hand fashion: classe <code>Capo</code> con validazione dei dati, registrazione, ricerca multi-attributo, statistiche, filtri avanzati con condizioni multiple, oltre a modifica, eliminazione e ordinamento della collezione. Sviluppato su Jupyter Notebook.</p>
-        <a class="project-link" href="files/Progetto_Python_Valerio_Aquilani.html" target="_blank" rel="noopener">Vedi il notebook →</a>
+      <div class="case-body">
+        <div><h3>Problema</h3><p>LookBook è un marketplace di abiti second-hand. Gli utenti avevano bisogno di un modo semplice per registrare, cercare e gestire i capi del proprio catalogo.</p></div>
+        <div><h3>Dati</h3><p>Ogni capo è un oggetto con tipo, colore, taglia, marca, prezzo, condizione, data di inserimento e disponibilità allo scambio. I dati in ingresso vengono controllati: campi obbligatori pieni, prezzo positivo, condizione tra quelle previste.</p></div>
+        <div><h3>Risultato</h3><p>Un sistema che registra i capi, li cerca per uno o più attributi, li filtra con condizioni combinate (per esempio una fascia di prezzo più un colore) e li ordina. Calcola anche le statistiche del catalogo: prezzo medio, distribuzione per tipo e colore, percentuale di capi scambiabili.</p></div>
+        <div class="case-link"><a class="link-forte" href="files/Progetto_Python_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a></div>
       </div>
+    </article>
 
-      <div class="project-card">
-        <div class="p-top">
-          <span class="project-tool">NUMPY</span>
-          <span class="status-pill live">disponibile</span>
-        </div>
-        <h3>File Organizer</h3>
-        <p>Script Python che organizza automaticamente una cartella di file eterogenei (audio, documenti, immagini) nelle rispettive sottocartelle, con log su CSV, un'interfaccia a linea di comando (CLI) per lo spostamento mirato di singoli file, e un'analisi con NumPy e PIL dei canali colore (RGB/RGBA/scala di grigi) delle immagini.</p>
-        <a class="project-link" href="files/Progetto_NumPy_Valerio_Aquilani.html" target="_blank" rel="noopener">Vedi il notebook →</a>
+    <article class="case" id="organizer" aria-labelledby="organizer-t">
+      <div class="case-top bg-senape">
+        <h2 class="display" id="organizer-t">File Organizer</h2>
+        <dl class="spec-list"><dt>Tipo</dt><dd>Automazione e analisi</dd><dt>Strumento</dt><dd>Python, NumPy, PIL</dd><dt>File</dt><dd>8, di tre tipi</dd></dl>
       </div>
+      <div class="case-body">
+        <div><h3>Problema</h3><p>Una cartella con file mescolati, tra testi, audio e immagini, da riordinare senza farlo a mano e senza perdere traccia di cosa si è spostato.</p></div>
+        <div><h3>Dati</h3><p>Gli 8 file della cartella e le 4 immagini, lette come array NumPy. Dalla forma dell’array si capisce se un’immagine è in scala di grigi, RGB o RGBA.</p></div>
+        <div><h3>Risultato</h3><p>Uno script che sposta ogni file nella sua sottocartella e registra ogni spostamento in un file CSV, senza mai cancellare lo storico. Un comando da terminale sposta un singolo file. Per ogni immagine una tabella riporta dimensioni e valore medio di ogni canale colore.</p></div>
+        <div class="case-link"><a class="link-forte" href="files/Progetto_NumPy_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a></div>
+      </div>
+    </article>
 
-    </div>
+    <article class="case" id="spreco" aria-labelledby="spreco-t">
+      <div class="case-top bg-pomodoro">
+        <h2 class="display" id="spreco-t">Spreco alimentare</h2>
+        <dl class="spec-list"><dt>Tipo</dt><dd>Analisi dati</dd><dt>Strumento</dt><dd>Excel avanzato</dd><dt>Per</dt><dd>Un’azienda contro lo spreco</dd></dl>
+      </div>
+      <div class="case-body">
+        <div><h3>Problema</h3><p>Un’azienda che lavora contro lo spreco alimentare aveva bisogno di leggere meglio i propri dati.</p></div>
+        <div><h3>Dati</h3><p>Un dataset esplorato con filtri avanzati e formule.</p></div>
+        <div><h3>Risultato</h3><p>Tabelle pivot e grafici che riassumono i dati in modo leggibile, anche per chi non usa Excel tutti i giorni.</p></div>
+        <div class="case-link"><a class="link-forte" href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a></div>
+      </div>
+    </article>
+
+    <article class="case" id="owly" aria-labelledby="owly-t">
+      <div class="case-top bg-cielo">
+        <h2 class="display" id="owly-t">Owly</h2>
+        <dl class="spec-list"><dt>Tipo</dt><dd>Report</dd><dt>Strumento</dt><dd>Excel</dd><dt>Settore</dt><dd>Education</dd></dl>
+      </div>
+      <div class="case-body">
+        <div><h3>Problema</h3><p>Owly è una piattaforma SaaS per le scuole primarie. Serviva ordine nei dati per sostenere il lavoro didattico.</p></div>
+        <div><h3>Dati</h3><p>I dati della piattaforma, organizzati in tabelle coerenti.</p></div>
+        <div><h3>Risultato</h3><p>Un sistema di report in Excel che aiuta a seguire l’andamento della didattica.</p></div>
+        <div class="case-link"><a class="link-forte" href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a></div>
+      </div>
+    </article>
   </div>
-</main>
+  </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Valerio Aquilani</span>
-    <span class="foot-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="cookie-policy.html">Cookie Policy</a>
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-    </span>
-  </div>
-</footer>
+  <footer class="footer" id="contatti">
+    <div class="footer-main">
+      <p class="display">Hai un progetto?<br><a href="#" data-email-reveal="keep">Scrivimi.</a></p>
+      <div class="footer-links">
+        <a href="#" data-email-reveal>Email</a>
+        <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <p class="availability">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+    <div class="footer-small">
+      <span>© 2026 Valerio Aquilani</span>
+      <span class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="cookie-policy.html">Cookie</a></span>
+    </div>
+  </footer>
+</div>
 
-<script src="js/script.js?v=5"></script>
+<aside class="aside" aria-label="Disponibilità">
+  <span class="aside-text">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido</span>
+  <a href="#contatti">Scrivimi</a>
+</aside>
+</div>
+
+<div class="menu-panel" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="menu-close" type="button">Chiudi</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
+          <li><a href="skills.html">Competenze</a></li>
+          <li><a href="about.html">Percorso</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <p class="menu-note">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+</div>
+
+<script src="js/script.js?v=6"></script>
 </body>
 </html>

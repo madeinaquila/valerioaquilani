@@ -2,93 +2,150 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valerio Aquilani — Web Developer & Data Analyst</title>
-<meta name="description" content="Portfolio di Valerio Aquilani: Web Developer in percorso verso Data Science, Analytics e Agenti AI.">
-<meta name="theme-color" content="#FAF9F6">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valerio Aquilani, UX/UI designer verso l’analisi dei dati</title>
+<meta name="description" content="Portfolio di Valerio Aquilani: UX/UI designer con 13 anni di esperienza, oggi impegnato nel Master in Data Science, Analytics e Agenti AI.">
+<meta name="theme-color" content="#E8B931">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E3A2F'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E8B931'/%3E%3C/svg%3E">
 
-<!-- Open Graph / LinkedIn / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://madeinaquila.github.io/valerioaquilani/">
-<meta property="og:title" content="Valerio Aquilani — Web Developer & Data Analyst">
-<meta property="og:description" content="Sviluppatore web in percorso verso Data Science, Analytics e Agenti AI. Scopri i miei progetti in Excel, SQL e Python.">
+<meta property="og:title" content="Disegno interfacce. Leggo i dati.">
+<meta property="og:description" content="UX/UI designer, verso l’analisi dei dati. Progetti in Figma, SQL, Python ed Excel.">
 <meta property="og:image" content="https://madeinaquila.github.io/valerioaquilani/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Valerio Aquilani — Web Developer & Data Analyst">
-<meta name="twitter:description" content="Sviluppatore web in percorso verso Data Science, Analytics e Agenti AI.">
-<meta name="twitter:image" content="https://madeinaquila.github.io/valerioaquilani/images/og-image.png">
-<link rel="stylesheet" href="css/style.css?v=5">
+
+<link rel="preload" href="fonts/smooch-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 
-<header class="site-header">
-  <nav class="main-nav">
-    <a href="index.html" class="nav-brand">Valerio Aquilani<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="index.html" class="active">/</a>
-      <a href="about.html">/about</a>
-      <a href="skills.html">/skills</a>
-      <a href="portfolio.html">/portfolio</a>
+<div class="shell">
+<div class="page">
+
+  <header class="hero">
+    <div class="shape-circle" aria-hidden="true"></div>
+    <div class="shape-square" aria-hidden="true"></div>
+
+    <div class="top">
+      <nav aria-label="Principale">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="portfolio.html">Progetti</a></li>
+          <li><a href="skills.html">Competenze</a></li>
+          <li><a href="about.html">Percorso</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     </div>
-    <div class="nav-contact">
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+
+    <h1 class="display">Disegno<br>interfacce.<br>Leggo<br>i dati.</h1>
+    <a class="btn btn-verde hero-cta" href="portfolio.html">Guarda i progetti</a>
+  </header>
+
+  <main id="contenuto">
+    <section class="specs" aria-label="In evidenza">
+      <div class="spec spec-intro">
+        <p>UX/UI designer, ora anche dati</p>
+        <svg aria-hidden="true" viewBox="0 0 60 60" width="60" height="60"><rect x="6" y="8" width="48" height="36" rx="4" fill="none" stroke="#1E3A2F" stroke-width="2.5"/><path d="M14 36 L24 26 L32 32 L46 18" fill="none" stroke="#E0533A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 52 H38" stroke="#1E3A2F" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+
+      <a class="spec" href="portfolio.html#sostenibile">
+        <span class="spec-head"><span>Sviluppo sostenibile in 195 Paesi</span><span class="tool">SQL</span></span>
+        <dl class="spec-list">
+          <dt>Tipo</dt><dd>Analisi dati</dd>
+          <dt>Dati</dt><dd>Economia, sanità, istruzione, energia</dd>
+          <dt>Periodo</dt><dd>Dal 2000 al 2020</dd>
+        </dl>
+      </a>
+
+      <a class="spec" href="portfolio.html#lookbook">
+        <span class="spec-head"><span>LookBook</span><span class="tool">Python</span></span>
+        <dl class="spec-list">
+          <dt>Tipo</dt><dd>Gestione di un catalogo</dd>
+          <dt>Dati</dt><dd>Abiti second-hand</dd>
+          <dt>Funzioni</dt><dd>Ricerca, filtri, statistiche</dd>
+        </dl>
+      </a>
+
+      <div class="ticker">
+        <p class="sr-only">Strumenti: Figma, UX/UI, accessibilità, SQL, Python, NumPy, Excel.</p>
+        <div class="ticker-track" aria-hidden="true">
+          <span>Figma * UX/UI * Accessibilità * SQL * Python * NumPy * Excel *</span>
+          <span>Figma * UX/UI * Accessibilità * SQL * Python * NumPy * Excel *</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz" data-quiz aria-labelledby="quiz-title">
+      <h2 id="quiz-title">Cosa stai cercando?</h2>
+      <div class="quiz-options" role="group" aria-labelledby="quiz-title">
+        <button type="button" data-answer="ui" aria-pressed="false">Qualcuno che progetti un’interfaccia</button>
+        <button type="button" data-answer="dati" aria-pressed="false">Qualcuno che analizzi dei dati</button>
+        <button type="button" data-answer="tutte" aria-pressed="false">Tutte e due le cose</button>
+      </div>
+      <p class="quiz-answer" aria-live="polite">Scegli una risposta e ti indico da dove iniziare.</p>
+    </section>
+
+    <section class="section" aria-labelledby="altri-title">
+      <h2 class="section-title" id="altri-title">Altri progetti</h2>
+      <div class="blocks">
+        <a class="block bg-pomodoro" href="portfolio.html#spreco">
+          <span class="display">Spreco alimentare</span>
+          <dl class="spec-list"><dt>Strumento</dt><dd>Excel avanzato</dd><dt>Cosa</dt><dd>Filtri, pivot e grafici</dd></dl>
+        </a>
+        <a class="block bg-verde" href="portfolio.html#organizer">
+          <span class="display">File Organizer</span>
+          <dl class="spec-list"><dt>Strumento</dt><dd>Python, NumPy</dd><dt>Cosa</dt><dd>Riordino file e analisi colori</dd></dl>
+        </a>
+        <a class="block bg-cielo" href="portfolio.html#owly">
+          <span class="display">Owly</span>
+          <dl class="spec-list"><dt>Strumento</dt><dd>Excel</dd><dt>Cosa</dt><dd>Report per una piattaforma scolastica</dd></dl>
+        </a>
+      </div>
+      <div class="section-foot"><a class="link-forte" href="portfolio.html">Tutti i progetti, raccontati per intero</a></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contatti">
+    <div class="footer-main">
+      <p class="display">Hai un progetto?<br><a href="#" data-email-reveal="keep">Scrivimi.</a></p>
+      <div class="footer-links">
+        <a href="#" data-email-reveal>Email</a>
+        <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
-  </nav>
-</header>
-
-<main class="page-body">
-  <div class="wrap">
-    <div class="hero hero-centered">
-      <div class="hero-avatar">
-        <span class="hero-avatar-initials">VA</span>
-      </div>
-
-      <p class="hero-greeting">Ciao, sono</p>
-      <h1>Valerio <span class="accent">Aquilani</span></h1>
-
-      <div class="role-row role-row-centered">
-        <span id="typing-target"></span><span class="cursor"></span>
-      </div>
-
-      <p class="hero-desc hero-desc-centered">
-        Sviluppatore web con la testa già proiettata sui dati: sto seguendo un <strong>Master in Data Science, Analytics e Agenti AI</strong>
-        per unire ciò che costruisco a ciò che i numeri raccontano.
-      </p>
-
-      <div class="btn-row btn-row-centered">
-        <a href="portfolio.html" class="btn btn-primary">Vedi i progetti →</a>
-        <a href="about.html" class="btn btn-ghost">Chi sono</a>
-        <a href="files/CV_Valerio_Aquilani.pdf" class="btn btn-ghost" download>Scarica il CV ↓</a>
-      </div>
-
-      <div class="signature-strip signature-strip-centered">
-        <span class="tag">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C97F1E" stroke-width="1.6"/><path d="M12 3c3 3 3 15 0 18M3 12h18M5 6.5c2 1.5 12 1.5 14 0M5 17.5c2-1.5 12-1.5 14 0" stroke="#C97F1E" stroke-width="1.3"/></svg>
-        </span>
-        <p>Fuori dal codice gioco a beach volley e pallavolo nella <b>Nazionale Italiana Sordi</b> (Federazione Sport Sordi Italia) — stessa disciplina e lettura del gioco, campo diverso.</p>
-      </div>
+    <p class="availability">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+    <div class="footer-small">
+      <span>© 2026</span>
+      <span class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="cookie-policy.html">Cookie</a></span>
     </div>
-  </div>
-</main>
+  </footer>
+</div>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Valerio Aquilani</span>
-    <span class="foot-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="cookie-policy.html">Cookie Policy</a>
+<aside class="aside" aria-label="Disponibilità">
+  <span class="aside-text">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido</span>
+  <a href="#contatti">Scrivimi</a>
+</aside>
+</div>
 
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-    </span>
-  </div>
-</footer>
+<div class="menu-panel" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="menu-close" type="button">Chiudi</button>
+  <ul>
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="portfolio.html">Progetti</a></li>
+    <li><a href="skills.html">Competenze</a></li>
+    <li><a href="about.html">Percorso</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <p class="menu-note">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+</div>
 
-<script src="js/script.js?v=5"></script>
+<script src="js/script.js?v=6"></script>
 </body>
 </html>

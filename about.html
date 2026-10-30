@@ -2,89 +2,105 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Valerio Aquilani</title>
-<meta name="description" content="Chi è Valerio Aquilani: Web Developer, studente del Master in Data Science, Analytics e Agenti AI, atleta della Nazionale Italiana Sordi.">
-<meta name="theme-color" content="#FAF9F6">
-<link rel="stylesheet" href="css/style.css?v=5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Percorso, Valerio Aquilani</title>
+<meta name="description" content="Il percorso di Valerio Aquilani: dal Graphic Design all’Accademia di Belle Arti, a 13 anni di UX/UI, fino all’analisi dei dati.">
+<meta name="theme-color" content="#E0533A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E3A2F'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E8B931'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Percorso, Valerio Aquilani">
+<meta property="og:description" content="Il percorso di Valerio Aquilani: dal Graphic Design all’Accademia di Belle Arti, a 13 anni di UX/UI, fino all’analisi dei dati.">
+<meta property="og:image" content="https://madeinaquila.github.io/valerioaquilani/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/smooch-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 
-<header class="site-header">
-  <nav class="main-nav">
-    <a href="index.html" class="nav-brand">Valerio Aquilani<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="index.html">/</a>
-      <a href="about.html" class="active">/about</a>
-      <a href="skills.html">/skills</a>
-      <a href="portfolio.html">/portfolio</a>
+<div class="shell">
+<div class="page">
+
+  <header class="band " style="background:var(--pomodoro);color:var(--ink)">
+    <div class="shape-circle" style="background:var(--cielo)" aria-hidden="true"></div>
+    <div class="shape-square" style="background:var(--senape)" aria-hidden="true"></div>
+    <div class="top">
+      <nav aria-label="Principale">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Progetti</a></li>
+          <li><a href="skills.html">Competenze</a></li>
+          <li><a href="about.html" aria-current="page">Percorso</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     </div>
-    <div class="nav-contact">
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
+    <h1 class="display">Percorso</h1>
+  </header>
+
+  <main id="contenuto">
+  <div class="story">
+    <div class="story-text">
+      <p>Mi chiamo Valerio. Ho studiato Graphic Design all’Accademia di Belle Arti di Roma ed è lì che mi sono appassionato al digitale.</p>
+      <p>Da 13 anni lavoro su progetti Tech, Healthcare e Wellness. Progetto interfacce su Figma, le sviluppo in front-end e mi assicuro che siano accessibili, seguendo le linee guida WCAG.</p>
+      <p>Negli ultimi mesi ho iniziato a lavorare con i dati. Sto seguendo un Master in Data Science, Analytics e Agenti AI, dove imparo Excel, SQL, Python e Java con progetti pratici. Voglio usare i dati per progettare meglio: capire come le persone usano un’interfaccia prima di cambiarla.</p>
+      <p>Lavorando sull’accessibilità mi sono avvicinato al tema dell’inclusione, in particolare delle persone sorde e di chi vive altre forme di disabilità. Mi piacerebbe approfondirlo con un corso in Diritti e inclusione delle persone con disabilità.</p>
     </div>
-  </nav>
-</header>
+    <aside class="looking" aria-labelledby="cerco">
+      <h2 id="cerco">Cosa cerco</h2>
+      <p>Un ruolo da UX/UI designer o data analyst junior a Milano, in modalità ibrida.</p>
+      <p><a class="link-forte" href="#contatti">Scrivimi</a></p>
+    </aside>
+  </div>
 
-<main class="page-body">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Chi sono</span>
-      <h2>Dal codice ai dati, senza cambiare rotta</h2>
-    </div>
+  <section class="route" aria-labelledby="tappe">
+    <h2 class="section-title" id="tappe" style="margin-bottom:64px">Le tappe</h2>
+    <ol>
+        <li><span class="stop" aria-hidden="true"></span><div><h3>Roma</h3><p>Laurea magistrale in Graphic Design all’Accademia di Belle Arti</p></div></li>
+        <li><span class="stop" aria-hidden="true"></span><div><h3>UX/UI design</h3><p>13 anni di progetti tra Tech, Healthcare e Wellness, su Figma</p></div></li>
+        <li><span class="stop" aria-hidden="true"></span><div><h3>Accessibilità</h3><p>Front-end e interfacce conformi alle WCAG</p></div></li>
+        <li class="now"><span class="stop" aria-hidden="true"></span><div><span class="tag">Sei qui</span><h3>Analisi dati</h3><p>Master in Data Science, Analytics e Agenti AI</p></div></li>
+        <li class="next"><span class="stop" aria-hidden="true"></span><div><h3>Milano</h3><p>Un ruolo da UX/UI designer o data analyst junior</p></div></li>
+    </ol>
+  </section>
+  </main>
 
-    <div class="about-grid">
-      <div class="avatar-frame">
-        <span class="initials">VA</span>
-        <span class="avatar-note">foto in arrivo</span>
-      </div>
-
-      <div class="about-copy">
-        <p class="lede">Sono Valerio, web developer con oltre 13 anni di esperienza in progetti Tech, Healthcare e Wellness.</p>
-
-        <p>Il mio percorso è nato all'<strong>Accademia di Belle Arti di Roma</strong>, dove ho conseguito una laurea magistrale in Graphic Design: è lì che è emersa la mia passione per il mondo IT, che ho poi trasformato in una carriera da sviluppatore.</p>
-
-        <p>Mi occupo di <strong>progettazione UX/UI su Figma</strong>, <strong>sviluppo front-end</strong> e <strong>accessibilità web (WCAG)</strong>. Negli ultimi mesi mi sono avvicinato con crescente interesse al mondo dei dati: per questo sto seguendo un <strong>Master in Data Science, Analytics e Agenti AI</strong>, dove sto imparando concretamente gli strumenti dell'analisi dati, dalle basi di Excel e SQL fino a Python e Java, attraverso progetti pratici.</p>
-
-        <p>Proprio dal lavoro sull'accessibilità web è nato un interesse più ampio per il tema dell'<strong>inclusione</strong>, in particolare per le persone sorde ma anche per altre forme di disabilità: un domani vorrei seguire un corso in <strong>Diritti e inclusione delle persone con disabilità in una prospettiva multidisciplinare</strong>, per approfondire questo ambito in modo più strutturato.</p>
-
-        <p>Fuori dallo schermo sono un <strong>atleta della Nazionale Italiana Sordi</strong> (Federazione Sport Sordi Italia), impegnato in beach volley e pallavolo: disciplina, lettura del gioco e lavoro di squadra sono la stessa logica che porto anche nell'analisi dei dati.</p>
-
-        <div class="looking-for-box">
-          <span class="looking-for-label">Attualmente alla ricerca di</span>
-          <p>Un ruolo come <strong>Web Developer</strong> o <strong>Data Analyst Junior</strong> a Milano, in modalità ibrida.</p>
-        </div>
-
-        <div class="chip-row">
-          <span class="chip chip-primary">Web Developer</span>
-          <span class="chip chip-primary">UX/UI · Figma</span>
-          <span class="chip chip-primary">Accessibilità Web (WCAG)</span>
-          <span class="chip chip-sand">Data Science & Analytics</span>
-          <span class="chip chip-sand">Java</span>
-          <span class="chip">Nazionale Italiana Sordi</span>
-        </div>
-
-        <div class="btn-row">
-          <a href="portfolio.html" class="btn btn-primary cv-btn">Guarda i progetti →</a>
-          <a href="files/CV_Valerio_Aquilani.pdf" class="btn btn-ghost" download>Scarica il CV ↓</a>
-        </div>
+  <footer class="footer" id="contatti">
+    <div class="footer-main">
+      <p class="display">Hai un progetto?<br><a href="#" data-email-reveal="keep">Scrivimi.</a></p>
+      <div class="footer-links">
+        <a href="#" data-email-reveal>Email</a>
+        <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
-  </div>
-</main>
+    <p class="availability">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+    <div class="footer-small">
+      <span>© 2026 Valerio Aquilani</span>
+      <span class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="cookie-policy.html">Cookie</a></span>
+    </div>
+  </footer>
+</div>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>© 2026 Valerio Aquilani</span>
-    <span class="foot-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="cookie-policy.html">Cookie Policy</a>
-      <a href="#" data-email-reveal>Email</a>
-      <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-    </span>
-  </div>
-</footer>
+<aside class="aside" aria-label="Disponibilità">
+  <span class="aside-text">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido</span>
+  <a href="#contatti">Scrivimi</a>
+</aside>
+</div>
 
-<script src="js/script.js?v=5"></script>
+<div class="menu-panel" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="menu-close" type="button">Chiudi</button>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Progetti</a></li>
+          <li><a href="skills.html">Competenze</a></li>
+          <li><a href="about.html" aria-current="page">Percorso</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <p class="menu-note">Cerco un ruolo da UX/UI designer o data analyst junior a Milano, in ibrido.</p>
+</div>
+
+<script src="js/script.js?v=6"></script>
 </body>
 </html>
