@@ -229,6 +229,9 @@ a.project:hover .big{text-decoration:underline;text-decoration-thickness:3px;tex
 .case-body p{font-size:17px;line-height:1.6}
 .case-link{grid-column:1 / -1;border-top:1px solid var(--riga);padding-top:20px;display:flex;gap:24px;flex-wrap:wrap}
 .case-link a{font-weight:700;text-underline-offset:4px}
+.case-img:has(video){background:#10162C;border-radius:var(--r-m);overflow:hidden}
+.case-img video{width:100%;max-width:808px;height:auto;display:block;margin:0 auto;background:#10162C}
+.case-note{flex-basis:100%;font-size:14px;color:var(--muted)}
 
 .spec{display:grid;grid-template-columns:110px minmax(0,1fr);row-gap:6px;column-gap:12px;margin:0;font-size:16px}
 .spec dt{font-weight:700}

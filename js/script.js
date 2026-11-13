@@ -39,3 +39,12 @@
     });
   });
 })();
+
+// Chi preferisce ridurre il movimento vede solo l'immagine ferma
+(function () {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('video[data-reduce-motion]').forEach((v) => {
+    v.removeAttribute('autoplay');
+    v.pause();
+  });
+})();
