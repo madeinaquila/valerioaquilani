@@ -4,159 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Progetti, Valerio Aquilani</title>
-<meta name="description" content="Casi studio di analisi dati e design: SQL, Python, NumPy, Excel e l’app ReStart, raccontati con problema, metodo e risultato.">
-<meta name="theme-color" content="#1E3A2F">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E3A2F'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23E8B931'/%3E%3C/svg%3E">
+<meta name="description" content="Progetti di Valerio Aquilani: l’app ReStart, il rebranding di TeleRoma 56 Sport, l’identità di Palazzo Fava e progetti di analisi dati.">
+<meta name="theme-color" content="#D9D1CA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B369A'/%3E%3Crect x='8' y='8' width='16' height='16' rx='4' fill='%23C34811'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://madeinaquila.github.io/valerioaquilani/portfolio.html">
 <meta property="og:title" content="Progetti, Valerio Aquilani">
-<meta property="og:description" content="Casi studio di analisi dati e design: SQL, Python, NumPy, Excel e l’app ReStart, raccontati con problema, metodo e risultato.">
+<meta property="og:description" content="Progetti di Valerio Aquilani: l’app ReStart, il rebranding di TeleRoma 56 Sport, l’identità di Palazzo Fava e progetti di analisi dati.">
 <meta property="og:image" content="https://madeinaquila.github.io/valerioaquilani/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="fonts/smooch-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=9">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=12">
 </head>
 <body>
 <a class="skip" href="#contenuto">Vai al contenuto</a>
 
-<div class="shell">
-<div class="page">
-
-  <header class="band on-dark" style="background:var(--verde);color:var(--chiaro)">
-    <div class="shape-circle" style="background:var(--senape)" aria-hidden="true"></div>
-    <div class="shape-square" style="background:var(--pomodoro)" aria-hidden="true"></div>
-    <div class="top">
-      <nav aria-label="Principale">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
-          <li><a href="skills.html">Competenze</a></li>
-          <li><a href="about.html">Percorso</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
-      </nav>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<div class="wrap">
+  <header class="top">
+    <nav aria-label="Principale">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
+        <li><a href="about.html">Percorso</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="top-actions">
+      <a class="pill pill-terra" href="#" data-email-reveal="keep">Scrivimi</a>
+      <button class="pill pill-line menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     </div>
-    <h1 class="display">Progetti</h1>
-    <p class="lede">Sei progetti tra analisi dati, automazione e design di prodotto. Per ognuno trovi il problema di partenza, come ci ho lavorato e cosa ne è uscito.</p>
   </header>
 
   <main id="contenuto">
-  <div class="cases">
-    <article class="case" id="sostenibile" aria-labelledby="sostenibile-t">
-      <div class="case-top bg-verde">
-        <h2 class="display" id="sostenibile-t">Sviluppo sostenibile in 195 Paesi</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>Analisi dati</dd><dt>Strumento</dt><dd>SQL, PostgreSQL</dd><dt>Periodo</dt><dd>Dal 2000 al 2020</dd></dl>
-      </div>
-      <div class="case-body">
-        <div><h3>Problema</h3><p>Capire come economia, salute, istruzione ed energia si muovono insieme nei diversi Paesi del mondo, e dove i numeri raccontano storie diverse.</p></div>
-        <div><h3>Dati</h3><p>Due dataset pubblici di Kaggle: indicatori 2023 per 195 Paesi e una serie storica sull’energia sostenibile per 176 Paesi. Ho tolto simboli e separatori, poi ho creato una tabella per far combaciare i nomi diversi dello stesso Paese, come Czech Republic e Czechia. 25 Paesi mancano nel secondo dataset e restano fuori dalle unioni.</p></div>
-        <div><h3>Risultato</h3><p>Aspettativa di vita e istruzione universitaria crescono con il PIL, e dividendo i Paesi in quartili di reddito la crescita è quasi costante. Le emissioni pro capite spesso ribaltano la classifica di quelle totali. Le rinnovabili crescono ovunque, ma a velocità diverse anche tra Italia, Germania, Francia e Spagna.</p></div>
-        <div class="case-link"><a class="link-forte" href="files/Progetto_SQL_Valerio_Aquilani.pdf" target="_blank" rel="noopener">Apri la presentazione (PDF)</a></div>
-      </div>
-    </article>
-
-    <article class="case" id="lookbook" aria-labelledby="lookbook-t">
-      <div class="case-top bg-cielo">
-        <h2 class="display" id="lookbook-t">LookBook</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>Gestione di un catalogo</dd><dt>Strumento</dt><dd>Python, Jupyter</dd><dt>Settore</dt><dd>Abbigliamento usato</dd></dl>
-      </div>
-      <div class="case-body">
-        <div><h3>Problema</h3><p>LookBook è un marketplace di abiti second-hand. Gli utenti avevano bisogno di un modo semplice per registrare, cercare e gestire i capi del proprio catalogo.</p></div>
-        <div><h3>Dati</h3><p>Ogni capo è un oggetto con tipo, colore, taglia, marca, prezzo, condizione, data di inserimento e disponibilità allo scambio. I dati in ingresso vengono controllati: campi obbligatori pieni, prezzo positivo, condizione tra quelle previste.</p></div>
-        <div><h3>Risultato</h3><p>Un sistema che registra i capi, li cerca per uno o più attributi, li filtra con condizioni combinate (per esempio una fascia di prezzo più un colore) e li ordina. Calcola anche le statistiche del catalogo: prezzo medio, distribuzione per tipo e colore, percentuale di capi scambiabili.</p></div>
-        <div class="case-link"><a class="link-forte" href="files/Progetto_Python_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a></div>
-      </div>
-    </article>
-
-    <article class="case" id="organizer" aria-labelledby="organizer-t">
-      <div class="case-top bg-senape">
-        <h2 class="display" id="organizer-t">File Organizer</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>Automazione e analisi</dd><dt>Strumento</dt><dd>Python, NumPy, PIL</dd><dt>File</dt><dd>8, di tre tipi</dd></dl>
-      </div>
-      <div class="case-body">
-        <div><h3>Problema</h3><p>Una cartella con file mescolati, tra testi, audio e immagini, da riordinare senza farlo a mano e senza perdere traccia di cosa si è spostato.</p></div>
-        <div><h3>Dati</h3><p>Gli 8 file della cartella e le 4 immagini, lette come array NumPy. Dalla forma dell’array si capisce se un’immagine è in scala di grigi, RGB o RGBA.</p></div>
-        <div><h3>Risultato</h3><p>Uno script che sposta ogni file nella sua sottocartella e registra ogni spostamento in un file CSV, senza mai cancellare lo storico. Un comando da terminale sposta un singolo file. Per ogni immagine una tabella riporta dimensioni e valore medio di ogni canale colore.</p></div>
-        <div class="case-link"><a class="link-forte" href="files/Progetto_NumPy_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a></div>
-      </div>
-    </article>
-
-    <article class="case" id="spreco" aria-labelledby="spreco-t">
-      <div class="case-top bg-pomodoro">
-        <h2 class="display" id="spreco-t">Spreco alimentare</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>Analisi dati</dd><dt>Strumento</dt><dd>Excel avanzato</dd><dt>Per</dt><dd>Un’azienda contro lo spreco</dd></dl>
-      </div>
-      <div class="case-body">
-        <div><h3>Problema</h3><p>Un’azienda che lavora contro lo spreco alimentare aveva bisogno di leggere meglio i propri dati.</p></div>
-        <div><h3>Dati</h3><p>Un dataset esplorato con filtri avanzati e formule.</p></div>
-        <div><h3>Risultato</h3><p>Tabelle pivot e grafici che riassumono i dati in modo leggibile, anche per chi non usa Excel tutti i giorni.</p></div>
-        <div class="case-link"><a class="link-forte" href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a></div>
-      </div>
-    </article>
+    <section class="card-xl bg-blu on-blu card page-head">
+      <div class="shape" style="background:var(--terracotta)" aria-hidden="true"></div>
+      <h1 class="big h-xl">Progetti</h1>
+      <p class="lede">App, identità visive e sistemi di segnaletica. Per ognuno trovi da dove sono partito, come ci ho lavorato e cosa ne è uscito.</p>
+    </section>
 
     <article class="case" id="restart" aria-labelledby="restart-t">
-      <div class="case-top bg-pomodoro">
-        <h2 class="display" id="restart-t">ReStart</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>App mobile, tesi magistrale</dd><dt>Strumenti</dt><dd>Figma, Illustrator, After Effects</dd><dt>Anno</dt><dd>2022</dd></dl>
+      <div class="case-top bg-terra on-terra">
+        <h2 class="big h-l" id="restart-t">ReStart</h2>
+        <dl class="spec"><dt>Tipo</dt><dd>App mobile</dd><dt>Contesto</dt><dd>Tesi di laurea magistrale</dd><dt>Strumenti</dt><dd>Figma, Illustrator, After Effects</dd><dt>Anno</dt><dd>2022</dd></dl>
       </div>
       <div class="case-body">
         <figure class="case-img"><img src="images/restart-cover.jpg" width="1616" height="1264" alt="Il marchio ReStart su fondo blu accanto alle schermate dell’app: allenamento consigliato, esercizio guidato con timer, farmaci della sera e chat con il personal trainer." loading="lazy"></figure>
         <div><h3>Problema</h3><p>Dopo un trapianto il recupero riguarda tutto il corpo. Chi è stato trapiantato riceve informazioni poco chiare su quanta attività fisica può fare, segue una terapia con più farmaci al giorno, vede il trainer solo di persona e trova app di fitness che non tengono conto della sua fragilità.</p></div>
         <div><h3>Progetto</h3><p>Un’app per due persone che lavorano insieme: chi è stato trapiantato e il personal trainer che lo segue. 12 schermate in tre flussi, allenarsi, curarsi e restare in contatto. Durante gli esercizi guidati la barra di navigazione sparisce, per ridurre distrazioni ed errori.</p></div>
         <div><h3>Risultato</h3><p>Esercizi guidati con un riscontro che arriva al trainer, i farmaci del giorno con promemoria e uno storico da mostrare al medico, una chat con il trainer. Il marchio è un cerchio quasi chiuso: dopo il trapianto non si torna al punto di partenza, si riparte in avanti. Il progetto nasce dall’esperienza di mio fratello, trapiantato di rene da bambino.</p></div>
-        <div class="case-link"><a class="link-forte" href="https://www.behance.net/gallery/257842561/ReStart-App-per-il-recupero-fisico-dopo-il-trapianto" target="_blank" rel="noopener">Guarda il progetto su Behance</a></div>
+        <div class="case-link"><a href="https://www.behance.net/gallery/257842561/ReStart-App-per-il-recupero-fisico-dopo-il-trapianto" target="_blank" rel="noopener">Guarda il progetto su Behance</a></div>
       </div>
     </article>
 
-    <article class="case" id="owly" aria-labelledby="owly-t">
-      <div class="case-top bg-cielo">
-        <h2 class="display" id="owly-t">Owly</h2>
-        <dl class="spec-list"><dt>Tipo</dt><dd>Report</dd><dt>Strumento</dt><dd>Excel</dd><dt>Settore</dt><dd>Education</dd></dl>
+    <article class="case" id="teleroma" aria-labelledby="teleroma-t">
+      <div class="case-top bg-blu on-blu">
+        <h2 class="big h-l" id="teleroma-t">TeleRoma 56 Sport</h2>
+        <dl class="spec"><dt>Tipo</dt><dd>Rebranding</dd><dt>Contesto</dt><dd>Corso di Computer Graphic, Accademia di Belle Arti di Roma</dd><dt>Strumenti</dt><dd>Illustrator, After Effects</dd><dt>Anno</dt><dd>2021</dd></dl>
       </div>
       <div class="case-body">
-        <div><h3>Problema</h3><p>Owly è una piattaforma SaaS per le scuole primarie. Serviva ordine nei dati per sostenere il lavoro didattico.</p></div>
-        <div><h3>Dati</h3><p>I dati della piattaforma, organizzati in tabelle coerenti.</p></div>
-        <div><h3>Risultato</h3><p>Un sistema di report in Excel che aiuta a seguire l’andamento della didattica.</p></div>
-        <div class="case-link"><a class="link-forte" href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a></div>
+        <div><h3>Problema</h3><p>TeleRoma 56 è una delle TV locali storiche di Roma, ma la sua immagine era rimasta indietro: un logo metallico con ombre e tre caratteri diversi, poco leggibile in onda e sugli schermi piccoli.</p></div>
+        <div><h3>Progetto</h3><p>Il marchio riparte dal numero che tutti conoscono, il 56, ridisegnato su una griglia di 16 × 16 moduli. Schermo, numero e spia diventano un segno solo. La spia in alto a destra è il segnale del “siamo in onda”.</p></div>
+        <div><h3>Risultato</h3><p>Il quadrato del marchio fa da finestra per foto e video e la tipografia gigante lo attraversa. Ogni sport ha il suo colore: verde per il calcio, viola per il volley, sabbia per il beach volley, pervinca per il basket. Il pacchetto on-air comprende aperture, transizioni, promo, palinsesti, risultati e grafiche per YouTube.</p></div>
+        <div class="case-link"><a href="https://www.behance.net/gallery/258250055/TeleRoma-56-Sport-Rebranding" target="_blank" rel="noopener">Guarda il progetto su Behance</a></div>
       </div>
     </article>
-  </div>
+
+    <article class="case" id="palazzo-fava" aria-labelledby="palazzo-fava-t">
+      <div class="case-top bg-terra on-terra">
+        <h2 class="big h-l" id="palazzo-fava-t">Palazzo Fava</h2>
+        <dl class="spec"><dt>Tipo</dt><dd>Identità visiva e wayfinding</dd><dt>Luogo</dt><dd>Bologna</dd><dt>Strumenti</dt><dd>Illustrator, After Effects</dd></dl>
+      </div>
+      <div class="case-body">
+        <div><h3>Il luogo</h3><p>Palazzo Fava è uno spazio espositivo nel cuore di Bologna.</p></div>
+        <div><h3>L’idea</h3><p>Il marchio nasce dagli ottagoni e dalle croci del soffitto a cassettoni del palazzo.</p></div>
+        <div><h3>Il sistema</h3><p>Due moduli che diventano logo, texture, frecce, pittogrammi e supporti per la segnaletica.</p></div>
+        <div class="case-link"><a href="https://www.behance.net/gallery/257975239/Palazzo-Fava-Identita-visiva-e-Wayfinding-System" target="_blank" rel="noopener">Guarda il progetto su Behance</a></div>
+      </div>
+    </article>
+
+    <section id="dati" aria-labelledby="dati-title" style="display:flex;flex-direction:column;gap:var(--pad);scroll-margin-top:24px">
+      <div class="section-head" style="flex-direction:column;align-items:flex-start;gap:16px">
+        <h2 class="big h-l" id="dati-title">Anche <span class="hl hl-terra">dati</span></h2>
+        <p style="max-width:38em">Progetti di analisi fatti con SQL, Python ed Excel. Mi aiutano a capire come le persone usano un prodotto prima di cambiarlo.</p>
+      </div>
+      <div class="mini-grid">
+      <article class="card bg-bianco mini">
+        <span class="tool">SQL, PostgreSQL</span>
+        <h3>Sviluppo sostenibile in 195 Paesi</h3>
+        <p>Economia, sanità, istruzione ed energia dal 2000 al 2020, con due dataset collegati e ripuliti.</p>
+        <a href="files/Progetto_SQL_Valerio_Aquilani.pdf" target="_blank" rel="noopener">Apri la presentazione (PDF)</a>
+      </article>
+      <article class="card bg-bianco mini">
+        <span class="tool">Python</span>
+        <h3>LookBook</h3>
+        <p>Catalogo di abiti second-hand con validazione dei dati, ricerca, filtri e statistiche.</p>
+        <a href="files/Progetto_Python_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a>
+      </article>
+      <article class="card bg-bianco mini">
+        <span class="tool">Python, NumPy</span>
+        <h3>File Organizer</h3>
+        <p>Riordino automatico dei file con registro degli spostamenti e analisi dei canali colore delle immagini.</p>
+        <a href="files/Progetto_NumPy_Valerio_Aquilani.html" target="_blank" rel="noopener">Apri il notebook</a>
+      </article>
+      <article class="card bg-bianco mini">
+        <span class="tool">Excel avanzato</span>
+        <h3>Spreco alimentare</h3>
+        <p>Filtri avanzati, tabelle pivot e grafici per un’azienda che lavora contro lo spreco alimentare.</p>
+        <a href="https://docs.google.com/spreadsheets/d/1O9I6sQzULG6O9XPOUIvnfI5Ez9gE8nNu/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a>
+      </article>
+      <article class="card bg-bianco mini">
+        <span class="tool">Excel</span>
+        <h3>Owly</h3>
+        <p>Un sistema di report per una piattaforma SaaS dedicata alle scuole primarie.</p>
+        <a href="https://docs.google.com/spreadsheets/d/1Si2Z7OQJOsQp8BdXwYXCZm5qjcYRXVem/edit?usp=drive_link&amp;ouid=101027872017826606681&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Apri il foglio di calcolo</a>
+      </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer" id="contatti">
+  <footer class="card card-xl bg-blu on-blu footer" id="contatti">
     <div class="footer-main">
-      <p class="display">Hai un progetto?<br><a href="#" data-email-reveal="keep">Scrivimi.</a></p>
-      <div class="footer-links">
-        <a href="#" data-email-reveal>Email</a>
-        <a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.behance.net/valerioaquilani" target="_blank" rel="noopener">Behance</a>
-      </div>
+      <p class="big">Hai un <span class="hl hl-terra">progetto</span>?</p>
+      <a class="pill pill-linen pill-lg" href="#" data-email-reveal="keep">Scrivimi</a>
     </div>
     <div class="footer-small">
-      <span>© 2026 Valerio Aquilani</span>
-      <span class="footer-links"><a href="privacy-policy.html">Privacy</a><a href="cookie-policy.html">Cookie</a></span>
+      <span class="social"><a href="https://www.linkedin.com/in/valerio-aquilani-575308144/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.behance.net/valerioaquilani" target="_blank" rel="noopener">Behance</a></span>
+      <span><a href="privacy-policy.html">Privacy</a><a href="cookie-policy.html">Cookie</a></span>
     </div>
   </footer>
 </div>
 
-<aside class="aside" aria-label="Disponibilità">
-  <span class="aside-text">Analisi dati e UX/UI design</span>
-  <a href="#contatti">Scrivimi</a>
-</aside>
-</div>
-
 <div class="menu-panel" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
-  <button class="menu-close" type="button">Chiudi</button>
+  <button class="pill pill-line menu-close" type="button">Chiudi</button>
   <ul>
     <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
-          <li><a href="skills.html">Competenze</a></li>
-          <li><a href="about.html">Percorso</a></li>
-          <li><a href="#contatti">Contatti</a></li>
+    <li><a href="portfolio.html" aria-current="page">Progetti</a></li>
+    <li><a href="about.html">Percorso</a></li>
+    <li><a href="#contatti">Contatti</a></li>
   </ul>
 </div>
 
-<script src="js/script.js?v=8"></script>
+<script src="js/script.js?v=12"></script>
 </body>
 </html>

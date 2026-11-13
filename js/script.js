@@ -24,26 +24,6 @@
   });
 })();
 
-// Domanda in homepage: "Cosa stai cercando?"
-(function () {
-  const quiz = document.querySelector('[data-quiz]');
-  if (!quiz) return;
-  const answer = quiz.querySelector('.quiz-answer');
-  const buttons = quiz.querySelectorAll('button[data-answer]');
-  const texts = {
-    ui: 'Guarda <a href="portfolio.html#restart">ReStart</a>, un’app per il recupero fisico dopo il trapianto, e il <a href="about.html">mio percorso</a> nel design.',
-    dati: 'Guarda il progetto SQL sui <a href="portfolio.html#sostenibile">195 Paesi</a> e quello sullo <a href="portfolio.html#spreco">spreco alimentare</a>.',
-    tutte: 'È proprio quello che faccio: analizzo i dati e progetto il modo più chiaro per mostrarli. <a href="portfolio.html">Vedi tutti i progetti</a>.'
-  };
-
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
-      answer.innerHTML = texts[btn.dataset.answer];
-    });
-  });
-})();
-
 // Email mostrata solo al clic, così i bot che leggono l'HTML non la trovano
 (function () {
   const user = 'v.aquilani10';
